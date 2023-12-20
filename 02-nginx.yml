@@ -5,7 +5,7 @@
       ansible.builtin.package:
         name: nginx
         state: present
-  name: start service
+       name: start service
     - tasks:
       ansible.builtin.service:
         name: ntpdate
