@@ -1,7 +1,7 @@
 - name: NGINX installtion
   hosts: web
-  name: installation of nginx on node server
-    - tasks: 
+    - tasks:
+      name: installation of nginx on node server
       ansible.builtin.package:
         name: nginx
         state: present
