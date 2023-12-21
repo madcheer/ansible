@@ -1,0 +1,12 @@
+- name: variables from PLAY Book
+  hosts: localhost
+  vars:
+    course: "DEVOPS"
+    trainer: "Siva"
+    duration: "110hrs"
+  tasks:
+  - name: variables inhertance
+    vars:
+      course: "DEVOPS with AWS"
+    ansible.builtin.debug:
+      msg: "Hi I am learning {{course}}, Trainer is {{trainer}}, Duriation is {{duration}}"
