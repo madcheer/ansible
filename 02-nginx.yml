@@ -1,5 +1,5 @@
 - name: NGINX installtion
-  hosts: web
+  hosts: localhost
   tasks:
     - name: installation of nginx on node server
       ansible.builtin.package:
@@ -8,5 +8,5 @@
   tasks:
     - name: starting nginx service
       ansible.builtin.service:
-        name: ntpdate
+        name: nginx
         state: started
