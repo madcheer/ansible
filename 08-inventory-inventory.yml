@@ -1,0 +1,6 @@
+- name: read varibales from inventory vars_files
+  hosts: localhost
+  tasks:
+  -name: check variables
+   ansible.builtin.debug:
+    msg: "Cousrse is {{course}}, trainer..{{trainer}}, duration..{{duration}}"
