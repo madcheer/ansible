@@ -3,6 +3,6 @@
   vars_files:
    - variables.yml
   tasks:
-   - name: variables
+  - name: variables
       ansible.builtin.debug:
         msg: "Hi I am learning {{course}}, Trainer is {{trainer}}, Duriation is {{duration}}"
