@@ -1,14 +1,14 @@
 - name: passing variables from command prompt
   hosts: localhost
   vars_prompt:
-    - name: username
-      prompt: what is username?
-      private: false
-    - name: password
-      prompt: enter the password
-      private: true
+  - name: username
+    prompt: what is username?
+    private: false
+  - name: password
+    prompt: enter the password
+    private: true
   tasks:
-    - name: print and check values
-      ansible.builtin.debug:
-       msg: "login as {{username}}"
+  - name: print and check values
+    ansible.builtin.debug:
+      msg: "login as {{username}}"
        
