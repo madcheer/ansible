@@ -1,3 +1,10 @@
 [web]
 54.196.224.9
 
+[localhost]
+localhost
+
+[localhost:vars]
+course="Devops from Inventory"
+trainer="Siva"
+duration="110hours"
