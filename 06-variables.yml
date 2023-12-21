@@ -1,8 +1,8 @@
 - name: variables from PLAY Book
   hosts: localhost
   vars_files:
-  - variables.yml
+   - variables.yml
   tasks:
-  - name: variables
-    ansible.builtin.debug:
-      msg: "Hi I am learning {{course}}, Trainer is {{trainer}}, Duriation is {{duration}}"
+   - name: variables
+      ansible.builtin.debug:
+        msg: "Hi I am learning {{course}}, Trainer is {{trainer}}, Duriation is {{duration}}"
