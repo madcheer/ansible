@@ -8,6 +8,6 @@
   hosts: localhost
   tasks:
   - name: PALY-2 TASK-2
-  ansible.builtin.debug:
-    msg: "PALY-2 TASK-2"
+    ansible.builtin.debug:
+      msg: "PALY-2 TASK-2"
   
