@@ -4,3 +4,10 @@
   - name: PALY-1 TASK-1
     ansible.builtin.debug:
       msg: "PALY-1 TAKS-1"
+- name: PLAY-2
+  hosts: localhost
+  tasks:
+  - name: PALY-2 TASK-2
+  ansible.builtin.debug:
+    msg: "PALY-2 TASK-2"
+  
